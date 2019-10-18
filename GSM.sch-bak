@@ -1,0 +1,1053 @@
+EESchema Schematic File Version 4
+LIBS:BLACKF407VG-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 15 15
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_GSM:SIM800C U?
+U 1 1 5DAF9777
+P 4750 2250
+AR Path="/5DAF9777" Ref="U?"  Part="1" 
+AR Path="/5DAF6F52/5DAF9777" Ref="U?"  Part="1" 
+AR Path="/5DB7E0C7/5DAF9777" Ref="U?"  Part="1" 
+F 0 "U?" H 4750 2300 50  0000 C CNN
+F 1 "SIM800C" H 4750 2200 50  0000 C CNN
+F 2 "RF_GSM:SIMCom_SIM800C" H 5300 1200 50  0001 C CNN
+F 3 "http://simcom.ee/documents/SIM800C/SIM800C_Hardware_Design_V1.05.pdf" H 100 -100 50  0001 C CNN
+	1    4750 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic_LevelTranslator:TXS0108EPW U?
+U 1 1 5DAF977D
+P 1550 2400
+AR Path="/5DAF977D" Ref="U?"  Part="1" 
+AR Path="/5DAF6F52/5DAF977D" Ref="U?"  Part="1" 
+AR Path="/5DB7E0C7/5DAF977D" Ref="U?"  Part="1" 
+F 0 "U?" H 1550 2650 50  0000 C CNN
+F 1 "TXS0108EPW" V 1550 2300 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 1550 1650 50  0001 C CNN
+F 3 "www.ti.com/lit/ds/symlink/txs0108e.pdf" H 1550 2300 50  0001 C CNN
+	1    1550 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5DAF9783
+P 10500 800
+AR Path="/5DAF9783" Ref="J?"  Part="1" 
+AR Path="/5DAF6F52/5DAF9783" Ref="J?"  Part="1" 
+AR Path="/5DB7E0C7/5DAF9783" Ref="J?"  Part="1" 
+F 0 "J?" H 10600 775 50  0000 L CNN
+F 1 "Conn_Coaxial" H 10600 684 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" H 10500 800 50  0001 C CNN
+F 3 " ~" H 10500 800 50  0001 C CNN
+	1    10500 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DAF9789
+P 10500 1100
+AR Path="/5DAF9789" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF6F52/5DAF9789" Ref="#PWR?"  Part="1" 
+AR Path="/5DB7E0C7/5DAF9789" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10500 850 50  0001 C CNN
+F 1 "GND" H 10505 927 50  0000 C CNN
+F 2 "" H 10500 1100 50  0001 C CNN
+F 3 "" H 10500 1100 50  0001 C CNN
+	1    10500 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 1100 10500 1000
+$Comp
+L Connector:NANO_SIMCARD_HOLDER U?
+U 1 1 5DAF9791
+P 5600 7100
+AR Path="/5DAF9791" Ref="U?"  Part="1" 
+AR Path="/5DAF6F52/5DAF9791" Ref="U?"  Part="1" 
+AR Path="/5DB7E0C7/5DAF9791" Ref="U?"  Part="1" 
+F 0 "U?" H 5600 7450 50  0000 C CNN
+F 1 "NANO_SIMCARD_HOLDER" H 5600 7474 50  0001 C CNN
+F 2 "" H 5650 7850 50  0001 C CNN
+F 3 "" H 5650 7850 50  0001 C CNN
+	1    5600 7100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5550 2350
+NoConn ~ 5550 2450
+NoConn ~ 5550 2550
+NoConn ~ 5550 3050
+NoConn ~ 5550 3150
+NoConn ~ 3950 3150
+NoConn ~ 3950 3050
+NoConn ~ 3950 2650
+NoConn ~ 5550 1550
+Wire Wire Line
+	1650 1500 1650 1700
+$Comp
+L Device:R R?
+U 1 1 5DAFA9D2
+P 950 1850
+F 0 "R?" H 1020 1896 50  0000 L CNN
+F 1 "R" H 1020 1805 50  0000 L CNN
+F 2 "" V 880 1850 50  0001 C CNN
+F 3 "~" H 950 1850 50  0001 C CNN
+	1    950  1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 1700 1450 1500
+Wire Wire Line
+	1450 1500 950  1500
+Wire Wire Line
+	950  1500 950  1700
+Wire Wire Line
+	1150 2000 950  2000
+$Comp
+L Jumper:Jumper_3_Bridged12 JP?
+U 1 1 5DAFDB1F
+P 1050 6700
+F 0 "JP?" V 1050 6767 50  0000 L CNN
+F 1 "Jumper_3_Bridged12" H 1050 6813 50  0001 C CNN
+F 2 "" H 1050 6700 50  0001 C CNN
+F 3 "~" H 1050 6700 50  0001 C CNN
+	1    1050 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Bridged12 JP?
+U 1 1 5DAFE2F2
+P 1050 7400
+F 0 "JP?" V 1050 7467 50  0000 L CNN
+F 1 "Jumper_3_Bridged12" H 1050 7513 50  0001 C CNN
+F 2 "" H 1050 7400 50  0001 C CNN
+F 3 "~" H 1050 7400 50  0001 C CNN
+	1    1050 7400
+	0    1    1    0   
+$EndComp
+Text Label 1950 2600 0    50   ~ 0
+GSM_TX
+Text Label 1950 2700 0    50   ~ 0
+GSM_RX
+Text Label 900  6700 2    50   ~ 0
+GSM_RX
+Text Label 900  7400 2    50   ~ 0
+GSM_TX
+Text Label 1150 7650 0    50   ~ 0
+GSM_DBG_TX
+Text Label 1150 6950 0    50   ~ 0
+GSM_DBG_RX
+Text Label 1150 6450 0    50   ~ 0
+GSM_DATA_RX
+Text Label 1150 7150 0    50   ~ 0
+GSM_DATA_TX
+Wire Wire Line
+	1650 6450 1050 6450
+Wire Wire Line
+	1650 6950 1050 6950
+Wire Wire Line
+	600  6700 900  6700
+Wire Wire Line
+	1650 7150 1050 7150
+Wire Wire Line
+	1650 7650 1050 7650
+Wire Wire Line
+	600  7400 900  7400
+Wire Notes Line
+	1750 7700 1750 6300
+Text Label 3400 1950 0    50   ~ 0
+GSM_DATA_RX
+Text Label 3400 2250 0    50   ~ 0
+GSM_DBG_RX
+Text Label 3400 1850 0    50   ~ 0
+GSM_DATA_TX
+Text Label 3400 2150 0    50   ~ 0
+GSM_DBG_TX
+Wire Wire Line
+	3400 2250 3950 2250
+Wire Wire Line
+	3400 2150 3950 2150
+Wire Wire Line
+	3400 1950 3950 1950
+Wire Wire Line
+	3950 1850 3400 1850
+Wire Wire Line
+	2250 2600 1950 2600
+Wire Wire Line
+	2250 2700 1950 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5DB083C7
+P 4750 3500
+AR Path="/5DB083C7" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF6F52/5DB083C7" Ref="#PWR?"  Part="1" 
+AR Path="/5DB7E0C7/5DB083C7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4750 3250 50  0001 C CNN
+F 1 "GND" H 4755 3327 50  0000 C CNN
+F 2 "" H 4750 3500 50  0001 C CNN
+F 3 "" H 4750 3500 50  0001 C CNN
+	1    4750 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3500 4750 3350
+Wire Wire Line
+	6100 1750 5550 1750
+Wire Wire Line
+	6100 1850 5550 1850
+Wire Wire Line
+	6100 1950 5550 1950
+Wire Wire Line
+	6100 2050 5550 2050
+Wire Wire Line
+	6100 2150 5550 2150
+Text Label 5650 1750 0    50   ~ 0
+SIM_VDD
+Text Label 5650 1850 0    50   ~ 0
+SIM_DATA
+Text Label 5650 1950 0    50   ~ 0
+SIM_CLK
+Text Label 5650 2050 0    50   ~ 0
+SIM_RST
+Text Label 5650 2150 0    50   ~ 0
+SIM_DET
+Wire Wire Line
+	6350 6900 6050 6900
+Wire Wire Line
+	4800 7200 4400 7200
+Wire Wire Line
+	4800 7000 4400 7000
+Wire Wire Line
+	4800 6900 4400 6900
+Wire Wire Line
+	6350 7100 6050 7100
+Text Label 6050 6900 0    50   ~ 0
+SIM_VDD
+Text Label 4450 7200 0    50   ~ 0
+SIM_DATA
+Text Label 4500 7000 0    50   ~ 0
+SIM_CLK
+Text Label 4500 6900 0    50   ~ 0
+SIM_RST
+Text Label 6050 7100 0    50   ~ 0
+SIM_DET
+$Comp
+L power:GND #PWR?
+U 1 1 5DB1236C
+P 6200 7400
+AR Path="/5DB1236C" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF6F52/5DB1236C" Ref="#PWR?"  Part="1" 
+AR Path="/5DB7E0C7/5DB1236C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6200 7150 50  0001 C CNN
+F 1 "GND" H 6205 7227 50  0000 C CNN
+F 2 "" H 6200 7400 50  0001 C CNN
+F 3 "" H 6200 7400 50  0001 C CNN
+	1    6200 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 7300 6200 7300
+Wire Wire Line
+	6200 7300 6200 7400
+NoConn ~ 5150 7300
+$Comp
+L Device:C C?
+U 1 1 5DB14638
+P 9900 6100
+F 0 "C?" H 10015 6146 50  0000 L CNN
+F 1 "C" H 10015 6055 50  0000 L CNN
+F 2 "" H 9938 5950 50  0001 C CNN
+F 3 "~" H 9900 6100 50  0001 C CNN
+	1    9900 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DB14A85
+P 10300 6100
+F 0 "C?" H 10415 6146 50  0000 L CNN
+F 1 "C" H 10415 6055 50  0000 L CNN
+F 2 "" H 10338 5950 50  0001 C CNN
+F 3 "~" H 10300 6100 50  0001 C CNN
+	1    10300 6100
+	1    0    0    -1  
+$EndComp
+Connection ~ 10300 5950
+Wire Wire Line
+	10300 5950 9900 5950
+$Comp
+L Device:C C?
+U 1 1 5DB150B4
+P 10650 6100
+F 0 "C?" H 10765 6146 50  0000 L CNN
+F 1 "C" H 10765 6055 50  0000 L CNN
+F 2 "" H 10688 5950 50  0001 C CNN
+F 3 "~" H 10650 6100 50  0001 C CNN
+	1    10650 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 5950 10300 5950
+Wire Wire Line
+	9900 6250 10300 6250
+Connection ~ 10300 6250
+Wire Wire Line
+	10300 6250 10650 6250
+$Comp
+L power:GND #PWR?
+U 1 1 5DB16228
+P 10300 6250
+AR Path="/5DB16228" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF6F52/5DB16228" Ref="#PWR?"  Part="1" 
+AR Path="/5DB7E0C7/5DB16228" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10300 6000 50  0001 C CNN
+F 1 "GND" H 10305 6077 50  0000 C CNN
+F 2 "" H 10300 6250 50  0001 C CNN
+F 3 "" H 10300 6250 50  0001 C CNN
+	1    10300 6250
+	1    0    0    -1  
+$EndComp
+Text Label 1950 2800 0    50   ~ 0
+GSM_SW_RST
+Wire Wire Line
+	2250 2800 1950 2800
+NoConn ~ 5550 1450
+$Comp
+L power:GND #PWR?
+U 1 1 5DB25AEC
+P 1550 3250
+AR Path="/5DB25AEC" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF6F52/5DB25AEC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB7E0C7/5DB25AEC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1550 3000 50  0001 C CNN
+F 1 "GND" H 1555 3077 50  0000 C CNN
+F 2 "" H 1550 3250 50  0001 C CNN
+F 3 "" H 1550 3250 50  0001 C CNN
+	1    1550 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 3250 1550 3100
+Text Label 4950 1150 1    50   ~ 0
+GSM_VBAT
+Text Label 4750 1150 1    50   ~ 0
+GSM_RTC_RST
+Text Label 2600 3900 0    50   ~ 0
+GSM_HW_RST
+$Comp
+L Transistor_BJT:BC817 Q?
+U 1 1 5DB26E94
+P 2900 6950
+F 0 "Q?" H 3091 6996 50  0000 L CNN
+F 1 "BC817" H 3091 6905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3100 6875 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 2900 6950 50  0001 L CNN
+	1    2900 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DB27540
+P 2350 6950
+F 0 "R?" V 2143 6950 50  0000 C CNN
+F 1 "4.7k" V 2234 6950 50  0000 C CNN
+F 2 "" V 2280 6950 50  0001 C CNN
+F 3 "~" H 2350 6950 50  0001 C CNN
+	1    2350 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DB27996
+P 2800 7300
+F 0 "R?" V 2593 7300 50  0000 C CNN
+F 1 "4.7k" V 2684 7300 50  0000 C CNN
+F 2 "" V 2730 7300 50  0001 C CNN
+F 3 "~" H 2800 7300 50  0001 C CNN
+	1    2800 7300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 6950 2600 6950
+Wire Wire Line
+	2650 7300 2600 7300
+Wire Wire Line
+	2600 7300 2600 6950
+Connection ~ 2600 6950
+Wire Wire Line
+	2600 6950 2500 6950
+Wire Wire Line
+	2950 7300 3000 7300
+Wire Wire Line
+	3000 7300 3000 7150
+$Comp
+L power:GND #PWR?
+U 1 1 5DB2B48E
+P 3000 7400
+AR Path="/5DB2B48E" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF6F52/5DB2B48E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB7E0C7/5DB2B48E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3000 7150 50  0001 C CNN
+F 1 "GND" H 3005 7227 50  0000 C CNN
+F 2 "" H 3000 7400 50  0001 C CNN
+F 3 "" H 3000 7400 50  0001 C CNN
+	1    3000 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 7400 3000 7300
+Connection ~ 3000 7300
+Wire Wire Line
+	1850 6950 2200 6950
+Wire Wire Line
+	3300 6600 3000 6600
+Wire Wire Line
+	3000 6600 3000 6750
+$Comp
+L Device:R R?
+U 1 1 5DB2EEA1
+P 4950 6900
+F 0 "R?" V 4850 6900 50  0000 C CNN
+F 1 "51" V 4950 6900 50  0000 C CNN
+F 2 "" V 4880 6900 50  0001 C CNN
+F 3 "~" H 4950 6900 50  0001 C CNN
+	1    4950 6900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DB2F0DD
+P 4950 7000
+F 0 "R?" V 4850 7000 50  0000 C CNN
+F 1 "51" V 4950 7000 50  0000 C CNN
+F 2 "" V 4880 7000 50  0001 C CNN
+F 3 "~" H 4950 7000 50  0001 C CNN
+	1    4950 7000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DB2F247
+P 4950 7200
+F 0 "R?" V 5050 7200 50  0000 C CNN
+F 1 "51" V 4950 7200 50  0000 C CNN
+F 2 "" V 4880 7200 50  0001 C CNN
+F 3 "~" H 4950 7200 50  0001 C CNN
+	1    4950 7200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5150 6900 5100 6900
+Wire Wire Line
+	5100 7000 5150 7000
+Wire Wire Line
+	5150 7200 5100 7200
+Text Label 3300 6600 2    50   ~ 0
+PWRKEY
+Text Label 3400 2450 0    50   ~ 0
+PWRKEY
+Wire Wire Line
+	3400 2450 3950 2450
+$Comp
+L Power_Protection:ESDA6V1-5SC6 D?
+U 1 1 5DB3A5B5
+P 4000 7050
+F 0 "D?" H 4050 6850 50  0000 L CNN
+F 1 "ESDA6V1-5SC6" H 3600 6700 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4700 6800 50  0001 C CNN
+F 3 "www.st.com/resource/en/datasheet/esda6v1-5sc6.pdf" V 4000 7050 50  0001 C CNN
+	1    4000 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DB3CC45
+P 4000 7400
+AR Path="/5DB3CC45" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF6F52/5DB3CC45" Ref="#PWR?"  Part="1" 
+AR Path="/5DB7E0C7/5DB3CC45" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4000 7150 50  0001 C CNN
+F 1 "GND" H 4005 7227 50  0000 C CNN
+F 2 "" H 4000 7400 50  0001 C CNN
+F 3 "" H 4000 7400 50  0001 C CNN
+	1    4000 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 7400 4000 7250
+Text Label 3800 6850 1    50   ~ 0
+SIM_RST
+Text Label 3900 6850 1    50   ~ 0
+SIM_CLK
+Text Label 4000 6850 1    50   ~ 0
+SIM_DATA
+Text Label 4100 6850 1    50   ~ 0
+SIM_VDD
+Text Label 4200 6850 1    50   ~ 0
+SIM_DET
+Wire Wire Line
+	3800 6500 3800 6850
+Wire Wire Line
+	3900 6500 3900 6850
+Wire Wire Line
+	4000 6500 4000 6850
+Wire Wire Line
+	4100 6500 4100 6850
+Wire Wire Line
+	4200 6500 4200 6850
+Wire Notes Line
+	3550 6300 3550 7700
+Wire Notes Line
+	6850 6300 6850 7700
+Wire Notes Line
+	550  7700 6850 7700
+Wire Notes Line
+	550  6300 6850 6300
+$Comp
+L Device:R R?
+U 1 1 5DB77086
+P 6100 6550
+F 0 "R?" V 6307 6550 50  0000 C CNN
+F 1 "4.7k" V 6216 6550 50  0000 C CNN
+F 2 "" V 6030 6550 50  0001 C CNN
+F 3 "~" H 6100 6550 50  0001 C CNN
+	1    6100 6550
+	0    -1   -1   0   
+$EndComp
+Text Label 6650 6550 2    50   ~ 0
+SIM_DET
+Text Label 4550 1150 1    50   ~ 0
+GSM_VDD_EXT
+Text Label 5400 6550 0    50   ~ 0
+GSM_VDD_EXT
+Wire Wire Line
+	5400 6550 5950 6550
+Wire Wire Line
+	6650 6550 6250 6550
+Text Label 6150 2850 2    50   ~ 0
+GSM_NETLIGHT
+Wire Wire Line
+	6150 2850 5550 2850
+Text Label 4050 5600 2    50   ~ 0
+GSM_NETLIGHT
+$Comp
+L Transistor_BJT:BC817 Q?
+U 1 1 5DB85AB0
+P 4800 5600
+F 0 "Q?" H 4991 5646 50  0000 L CNN
+F 1 "BC817" H 4991 5555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5000 5525 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 4800 5600 50  0001 L CNN
+	1    4800 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DB85AB6
+P 4250 5600
+F 0 "R?" V 4043 5600 50  0000 C CNN
+F 1 "4.7k" V 4134 5600 50  0000 C CNN
+F 2 "" V 4180 5600 50  0001 C CNN
+F 3 "~" H 4250 5600 50  0001 C CNN
+	1    4250 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DB85ABC
+P 4700 5950
+F 0 "R?" V 4493 5950 50  0000 C CNN
+F 1 "4.7k" V 4584 5950 50  0000 C CNN
+F 2 "" V 4630 5950 50  0001 C CNN
+F 3 "~" H 4700 5950 50  0001 C CNN
+	1    4700 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 5600 4500 5600
+Wire Wire Line
+	4550 5950 4500 5950
+Wire Wire Line
+	4500 5950 4500 5600
+Connection ~ 4500 5600
+Wire Wire Line
+	4500 5600 4400 5600
+Wire Wire Line
+	4850 5950 4900 5950
+Wire Wire Line
+	4900 5950 4900 5800
+$Comp
+L power:GND #PWR?
+U 1 1 5DB85AC9
+P 4900 6050
+AR Path="/5DB85AC9" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF6F52/5DB85AC9" Ref="#PWR?"  Part="1" 
+AR Path="/5DB7E0C7/5DB85AC9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4900 5800 50  0001 C CNN
+F 1 "GND" H 4905 5877 50  0000 C CNN
+F 2 "" H 4900 6050 50  0001 C CNN
+F 3 "" H 4900 6050 50  0001 C CNN
+	1    4900 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 6050 4900 5950
+Connection ~ 4900 5950
+Wire Wire Line
+	4900 5250 4900 5400
+Wire Wire Line
+	3500 5600 4100 5600
+$Comp
+L Device:R R?
+U 1 1 5DB8990A
+P 4550 5250
+F 0 "R?" H 4480 5204 50  0000 R CNN
+F 1 "4.7k" H 4480 5295 50  0000 R CNN
+F 2 "" V 4480 5250 50  0001 C CNN
+F 3 "~" H 4550 5250 50  0001 C CNN
+	1    4550 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DB8A370
+P 4000 5250
+F 0 "D?" V 4039 5133 50  0000 R CNN
+F 1 "LED" V 3948 5133 50  0000 R CNN
+F 2 "" H 4000 5250 50  0001 C CNN
+F 3 "~" H 4000 5250 50  0001 C CNN
+	1    4000 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4400 5250 4150 5250
+Text Label 3850 5250 2    50   ~ 0
+GSM_VBAT
+Wire Wire Line
+	3500 5250 3850 5250
+Wire Wire Line
+	4900 5250 4700 5250
+$Comp
+L Device:D_Zener D?
+U 1 1 5DB9B342
+P 7600 6100
+F 0 "D?" V 7600 6179 50  0000 L CNN
+F 1 "MMSZ4689-V" V 7645 6179 50  0001 L CNN
+F 2 "" H 7600 6100 50  0001 C CNN
+F 3 "~" H 7600 6100 50  0001 C CNN
+	1    7600 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DB9C1D5
+P 8000 6100
+F 0 "C?" H 8115 6146 50  0000 L CNN
+F 1 "33pF" H 8115 6055 50  0000 L CNN
+F 2 "" H 8038 5950 50  0001 C CNN
+F 3 "~" H 8000 6100 50  0001 C CNN
+	1    8000 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DB9C8B5
+P 8400 6100
+F 0 "C?" H 8515 6146 50  0000 L CNN
+F 1 "10pF" H 8515 6055 50  0000 L CNN
+F 2 "" H 8438 5950 50  0001 C CNN
+F 3 "~" H 8400 6100 50  0001 C CNN
+	1    8400 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DB9CCAB
+P 8800 6100
+F 0 "C?" H 8915 6146 50  0000 L CNN
+F 1 "47uF" H 8915 6055 50  0000 L CNN
+F 2 "" H 8838 5950 50  0001 C CNN
+F 3 "~" H 8800 6100 50  0001 C CNN
+	1    8800 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5DB9DA32
+P 9250 6100
+F 0 "C?" H 9368 6146 50  0000 L CNN
+F 1 "1000uF" H 9368 6055 50  0000 L CNN
+F 2 "" H 9288 5950 50  0001 C CNN
+F 3 "TAJE108M006RNJ" H 9250 6100 50  0001 C CNN
+	1    9250 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 5950 8000 5950
+Connection ~ 8000 5950
+Wire Wire Line
+	8000 5950 8400 5950
+Connection ~ 8400 5950
+Wire Wire Line
+	8400 5950 8800 5950
+Connection ~ 8800 5950
+Wire Wire Line
+	8800 5950 9250 5950
+Wire Wire Line
+	9250 6250 8800 6250
+Connection ~ 8000 6250
+Wire Wire Line
+	8000 6250 7600 6250
+Connection ~ 8400 6250
+Wire Wire Line
+	8400 6250 8000 6250
+Connection ~ 8800 6250
+Wire Wire Line
+	8800 6250 8400 6250
+$Comp
+L power:GND #PWR?
+U 1 1 5DBA2F7C
+P 8400 6250
+AR Path="/5DBA2F7C" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF6F52/5DBA2F7C" Ref="#PWR?"  Part="1" 
+AR Path="/5DB7E0C7/5DBA2F7C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8400 6000 50  0001 C CNN
+F 1 "GND" H 8405 6077 50  0000 C CNN
+F 2 "" H 8400 6250 50  0001 C CNN
+F 3 "" H 8400 6250 50  0001 C CNN
+	1    8400 6250
+	1    0    0    -1  
+$EndComp
+Text Label 8600 5950 2    50   ~ 0
+GSM_VBAT
+Text Label 5900 1350 2    50   ~ 0
+GSM_RF
+Text Label 9950 800  0    50   ~ 0
+GSM_RF
+Wire Wire Line
+	9950 800  10300 800 
+Wire Wire Line
+	6100 1350 5550 1350
+Text Label 3400 1650 0    50   ~ 0
+GSM_CTS
+Text Label 3400 1750 0    50   ~ 0
+GSM_RTS
+Text Label 3400 1450 0    50   ~ 0
+GSM_RI
+Text Label 3400 1350 0    50   ~ 0
+GSM_DTR
+Text Label 3400 1550 0    50   ~ 0
+GSM_DCD
+Wire Wire Line
+	4550 650  4550 1150
+Wire Wire Line
+	4750 650  4750 1150
+Wire Wire Line
+	4950 650  4950 1150
+Text Label 10550 5950 2    50   ~ 0
+GSM_VDD_EXT
+Text Label 1650 1500 0    50   ~ 0
+GSM_VDD_EXT
+Text Label 1950 2400 0    50   ~ 0
+GSM_CTS
+Text Label 1950 2500 0    50   ~ 0
+GSM_RTS
+Text Label 1950 2200 0    50   ~ 0
+GSM_RI
+Text Label 1950 2100 0    50   ~ 0
+GSM_DTR
+Text Label 1950 2300 0    50   ~ 0
+GSM_DCD
+Wire Wire Line
+	2250 2500 1950 2500
+Wire Wire Line
+	2250 2400 1950 2400
+Wire Wire Line
+	2250 2300 1950 2300
+Wire Wire Line
+	2250 2200 1950 2200
+Wire Wire Line
+	2250 2100 1950 2100
+Wire Wire Line
+	3400 1350 3950 1350
+Wire Wire Line
+	3400 1450 3950 1450
+Wire Wire Line
+	3400 1550 3950 1550
+Wire Wire Line
+	3400 1650 3950 1650
+Wire Wire Line
+	3400 1750 3950 1750
+$Comp
+L RF_GSM:SIM7020E U?
+U 1 1 5DBE2663
+P 8400 2350
+F 0 "U?" H 8400 2400 50  0000 C CNN
+F 1 "SIM7020E" H 8400 2300 50  0000 C CNN
+F 2 "RF_GSM:SIMCom_SIM800C" H 8950 1300 50  0001 C CNN
+F 3 "https://simcom.ee/documents/SIM7020/SIM7020%20Hardware%20Design_V1.01.pdf" H 3750 0   50  0001 C CNN
+	1    8400 2350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8400 1250
+NoConn ~ 7600 3050
+NoConn ~ 9200 2450
+NoConn ~ 9200 2550
+NoConn ~ 9200 2650
+NoConn ~ 7600 2850
+NoConn ~ 9200 3250
+NoConn ~ 9200 3150
+Wire Wire Line
+	9750 1850 9200 1850
+Wire Wire Line
+	9750 1950 9200 1950
+Wire Wire Line
+	9750 2050 9200 2050
+Wire Wire Line
+	9750 2150 9200 2150
+Wire Wire Line
+	9750 2250 9200 2250
+Text Label 9300 1850 0    50   ~ 0
+SIM_VDD
+Text Label 9300 1950 0    50   ~ 0
+SIM_DATA
+Text Label 9300 2050 0    50   ~ 0
+SIM_CLK
+Text Label 9300 2150 0    50   ~ 0
+SIM_RST
+Text Label 9300 2250 0    50   ~ 0
+SIM_DET
+Text Label 9800 2950 2    50   ~ 0
+GSM_NETLIGHT
+Wire Wire Line
+	9800 2950 9200 2950
+Text Label 9550 1450 2    50   ~ 0
+GSM_RF
+Wire Wire Line
+	9750 1450 9200 1450
+Text Label 7050 2050 0    50   ~ 0
+GSM_DATA_RX
+Text Label 7050 2350 0    50   ~ 0
+GSM_DBG_RX
+Text Label 7050 1950 0    50   ~ 0
+GSM_DATA_TX
+Text Label 7050 2250 0    50   ~ 0
+GSM_DBG_TX
+Wire Wire Line
+	7050 2350 7600 2350
+Wire Wire Line
+	7050 2250 7600 2250
+Wire Wire Line
+	7050 2050 7600 2050
+Wire Wire Line
+	7600 1950 7050 1950
+Text Label 7050 2550 0    50   ~ 0
+PWRKEY
+Wire Wire Line
+	7050 2550 7600 2550
+Text Label 7050 1750 0    50   ~ 0
+GSM_CTS
+Text Label 7050 1850 0    50   ~ 0
+GSM_RTS
+Text Label 7050 1550 0    50   ~ 0
+GSM_RI
+Text Label 7050 1450 0    50   ~ 0
+GSM_DTR
+Text Label 7050 1650 0    50   ~ 0
+GSM_DCD
+Wire Wire Line
+	7050 1450 7600 1450
+Wire Wire Line
+	7050 1550 7600 1550
+Wire Wire Line
+	7050 1650 7600 1650
+Wire Wire Line
+	7050 1750 7600 1750
+Wire Wire Line
+	7050 1850 7600 1850
+Text Label 8200 1250 1    50   ~ 0
+GSM_VDD_EXT
+Wire Wire Line
+	8200 750  8200 1250
+Text Label 8600 1250 1    50   ~ 0
+GSM_VBAT
+Wire Wire Line
+	8600 750  8600 1250
+Text Label 7550 2650 2    50   ~ 0
+GSM_RTC_RST
+Wire Wire Line
+	7050 2650 7600 2650
+Text Notes 7750 4500 0    50   ~ 0
+MP1584 POWER converter
+Text Label 1850 6950 0    50   ~ 0
+GSM_PWR
+Text HLabel 1300 3800 0    50   Input ~ 0
+VCC_3.3V
+Text HLabel 1150 2200 0    50   Input ~ 0
+RI
+Text HLabel 1150 2100 0    50   Input ~ 0
+DTR
+Text HLabel 1150 2300 0    50   Input ~ 0
+DCD
+Text HLabel 1150 2400 0    50   Input ~ 0
+CTS
+Text HLabel 1150 2500 0    50   Input ~ 0
+RTS
+Text HLabel 1150 2600 0    50   Input ~ 0
+TX
+Text HLabel 1150 2700 0    50   Input ~ 0
+RX
+Text HLabel 1350 4800 0    50   Input ~ 0
+PWRKEY
+Text HLabel 1350 4900 0    50   Input ~ 0
+STATUS
+$Comp
+L Transistor_BJT:BC817 Q?
+U 1 1 5DB8236C
+P 6700 5600
+F 0 "Q?" H 6891 5646 50  0000 L CNN
+F 1 "BC817" H 6891 5555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6900 5525 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 6700 5600 50  0001 L CNN
+	1    6700 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DB82372
+P 6150 5600
+F 0 "R?" V 5943 5600 50  0000 C CNN
+F 1 "4.7k" V 6034 5600 50  0000 C CNN
+F 2 "" V 6080 5600 50  0001 C CNN
+F 3 "~" H 6150 5600 50  0001 C CNN
+	1    6150 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DB82378
+P 6600 5950
+F 0 "R?" V 6393 5950 50  0000 C CNN
+F 1 "4.7k" V 6484 5950 50  0000 C CNN
+F 2 "" V 6530 5950 50  0001 C CNN
+F 3 "~" H 6600 5950 50  0001 C CNN
+	1    6600 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 5600 6400 5600
+Wire Wire Line
+	6450 5950 6400 5950
+Wire Wire Line
+	6400 5950 6400 5600
+Connection ~ 6400 5600
+Wire Wire Line
+	6400 5600 6300 5600
+Wire Wire Line
+	6750 5950 6800 5950
+Wire Wire Line
+	6800 5950 6800 5800
+$Comp
+L power:GND #PWR?
+U 1 1 5DB82385
+P 6800 6050
+AR Path="/5DB82385" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF6F52/5DB82385" Ref="#PWR?"  Part="1" 
+AR Path="/5DB7E0C7/5DB82385" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6800 5800 50  0001 C CNN
+F 1 "GND" H 6805 5877 50  0000 C CNN
+F 2 "" H 6800 6050 50  0001 C CNN
+F 3 "" H 6800 6050 50  0001 C CNN
+	1    6800 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 6050 6800 5950
+Connection ~ 6800 5950
+Wire Wire Line
+	5400 5600 6000 5600
+Text Label 5400 5600 0    50   ~ 0
+GSM_STATUS
+Wire Wire Line
+	7300 5400 6800 5400
+$Comp
+L power:GND #PWR?
+U 1 1 5DB91EC3
+P 8400 3600
+AR Path="/5DB91EC3" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF6F52/5DB91EC3" Ref="#PWR?"  Part="1" 
+AR Path="/5DB7E0C7/5DB91EC3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8400 3350 50  0001 C CNN
+F 1 "GND" H 8405 3427 50  0000 C CNN
+F 2 "" H 8400 3600 50  0001 C CNN
+F 3 "" H 8400 3600 50  0001 C CNN
+	1    8400 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3600 8400 3450
+Wire Wire Line
+	6150 2750 5550 2750
+Text Label 5600 2750 0    50   ~ 0
+GSM_STATUS
+Wire Wire Line
+	9800 2850 9200 2850
+Text Label 9250 2850 0    50   ~ 0
+GSM_STATUS
+NoConn ~ 7600 3150
+$Comp
+L Jumper:Jumper_3_Bridged12 JP?
+U 1 1 5DBA330A
+P 1250 5950
+F 0 "JP?" V 1250 6017 50  0000 L CNN
+F 1 "Jumper_3_Bridged12" H 1250 6063 50  0001 C CNN
+F 2 "" H 1250 5950 50  0001 C CNN
+F 3 "~" H 1250 5950 50  0001 C CNN
+	1    1250 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 5700 1250 5700
+Wire Wire Line
+	1850 6200 1250 6200
+Text Label 1850 6200 2    50   ~ 0
+BATT
+Text Label 600  5950 0    50   ~ 0
+GSM_RTC_RST
+Text Label 1850 5700 2    50   ~ 0
+GSM_SW_RST
+Wire Wire Line
+	600  5950 1100 5950
+Wire Notes Line
+	550  5500 2250 5500
+Wire Notes Line
+	2250 5500 2250 6300
+Wire Notes Line
+	550  5500 550  7700
+Text HLabel 1250 3950 0    50   Input ~ 0
+VCC_5V
+$Comp
+L Device:C C?
+U 1 1 5DBE5D8D
+P 8750 5450
+F 0 "C?" H 8865 5496 50  0000 L CNN
+F 1 "100uF" H 8865 5405 50  0000 L CNN
+F 2 "" H 8788 5300 50  0001 C CNN
+F 3 "CL31A107MQHNNNE" H 8750 5450 50  0001 C CNN
+	1    8750 5450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
